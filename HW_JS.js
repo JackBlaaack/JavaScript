@@ -47,15 +47,18 @@ let age_3 = 60;
     console.log("Technical work");
  }
 
-for(i=1;i<=100;i++){
+for(let i=1;i<=100;i++){
 console.log(i);
-if(i % 3 == 0){
+if(i % 3 === 0){
     console.log("Число делится на 3");
 }
-if(i % 5 == 0){
+ else if(i % 5 === 0){
     console.log("Число делится на 5");
 }
-if(i % 3 == 0 || i % 5 ==0){
+else if(i % 3 === 0 && i % 5 === 0){
     console.log("Число делится на 3 и на 5");
+}
+ else {
+  console.log(i);
 }
 }
