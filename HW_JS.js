@@ -18,22 +18,18 @@ let item_5 = item_3;
 let item_6;
 let item_6_type;
 item_6 = 15;
-item_6_type = item_6;
+item_6_type = Number(item_6);
 console.log("item_6 ==", item_6,"item_6_type ==", item_6_type, typeof(item_6_type));
 
 let item_7 = String(item_6);
 let item_7_type;
-item_7_type = item_7;
+item_7_type = String(item_7);
 console.log('item_7 ==', item_7,'item_7_type == ', item_7_type, typeof(item_7));
 
 let age_1 = 10;
 let age_2 = 18;
 let age_3 = 60;
- if(age_1 ==10){
-    console.log(true);
- }
-
- else if(age_1<age_2){
+ if(age_1<age_2){
     console.log('You don’t have access cause your age is' + age_1 + 'It’s less then');
  }
 
@@ -49,14 +45,14 @@ let age_3 = 60;
 
 for(let i=1;i<=100;i++){
 console.log(i);
-if(i % 3 === 0){
-    console.log("Число делится на 3");
+if(i % 3 === 0 && i % 5 === 0){
+    console.log("Число делится на 3 и на 5");
 }
  else if(i % 5 === 0){
     console.log("Число делится на 5");
 }
 else if(i % 3 === 0 && i % 5 === 0){
-    console.log("Число делится на 3 и на 5");
+    console.log("Число делится на 3");
 }
  else {
   console.log(i);
