@@ -1,11 +1,8 @@
 function checkAge(age_1){
     age_1 = Number(age_1);
     console.log(typeof(age_1));
-     if(typeof(age_1)=="number"){
-        if(typeof(age_1=="NaN")){
-            console.log("Error");
-        }
-
+     if(typeof(age_1)=="number" && typeof(age_1=="NaN"){
+        
     if(age_1 < 18){
     alert("Go home");
     }
